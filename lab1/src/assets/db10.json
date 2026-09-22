@@ -1,0 +1,18 @@
+{
+    "members": [
+        {
+            "id": 1235,
+            "name": "imene",
+            "cin": "12345",
+            "type": "teacher",
+            "createdAt": "2023-06-01T12:00:00Z"
+        },
+        {
+            "id": 1236,
+            "name": "raja",
+            "cin": "12346",
+            "type": "student",
+            "createdAt": "2023-06-01T12:00:00Z"
+        }
+    ]
+}
