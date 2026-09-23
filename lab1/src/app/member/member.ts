@@ -5,10 +5,11 @@ import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import { MemberModel } from '../../models/Member';
 import { MemberService } from '../../services/member-service';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-member',
-  imports: [CommonModule, MatTableModule, MatIconModule],
+  imports: [CommonModule, MatTableModule, MatIconModule, RouterLink],
   templateUrl: './member.html',
   styleUrl: './member.css'
 })

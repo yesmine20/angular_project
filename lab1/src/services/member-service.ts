@@ -8,7 +8,7 @@ import { MemberModel } from '../models/Member';
 //decorateur qui permet de déclarer que le service accepte l'injection
 //on l'injecte soit dans un composant ou dna s un autre service
 export class MemberService {
-  constructor(private http: HttpClient) {} //injection du service httpclient dans le constructeur du service member service
+  constructor(private http: HttpClient) { } //injection du service httpclient dans le constructeur du service member service
   //ce que se trouve dans un service
   //fonction qui envoie des requetes http vers le bakcned 
   // (get ,post , put , delete, patch = nbadel beha attribut wahed )
@@ -17,5 +17,9 @@ export class MemberService {
     // fi wost < type eli testana fih men aand req 
     return this.http.get<MemberModel[]>('http://localhost:3000/members'); //get request
     //notification je veux avoir a partir du abckned : MemberModel[]
+  }
+  AddMember(m: MemberModel) {
+    return this.http.post<void>('http://localhost:3000/members',m);
+    //hatineha void khtr de point du vue data amyjini chy 
   }
 }
