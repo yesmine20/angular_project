@@ -1,24 +1,30 @@
-<form>
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
-        <p>
-            <mat-form-field appearance="fill">
-                <input matInput placeholder="cin">
-            </mat-form-field>
-        </p>
-        <p>
-            <mat-form-field appearance="fill">
-                <input matInput placeholder="name">
-            </mat-form-field>
-        </p>
-        <p>
-            <mat-form-field appearance="fill">
-                <input matInput placeholder="type">
-            </mat-form-field>
-        </p>
-        <p>
-            <mat-form-field appearance="fill">
-                <input matInput placeholder="createdAt">
-            </mat-form-field>
-        </p>
-        <button mat-raised-button color="primary" type="submit">Submit</button>
-    </form>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <mat-form-field>
+    <mat-label>CIN</mat-label>
+    <input matInput placeholder="cin" formControlName="cin">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="name" formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Type</mat-label>
+    <mat-select formControlName="type">
+      <mat-option value="teacher">teacher</mat-option>
+      <mat-option value="Student">Student</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Created At</mat-label>
+    <input matInput type="date" formControlName="createdAt">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">
+    Submit
+  </button>
+
+</form>

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MemberModel } from '../models/Member';
+import id from '@angular/common/locales/extra/id';
 
 @Injectable({
   providedIn: 'root', //ce service accepte d'etre injecté sur tout la route 
@@ -19,7 +20,16 @@ export class MemberService {
     //notification je veux avoir a partir du abckned : MemberModel[]
   }
   AddMember(m: MemberModel) {
-    return this.http.post<void>('http://localhost:3000/members',m);
+    return this.http.post<void>('http://localhost:3000/members', m);
     //hatineha void khtr de point du vue data amyjini chy 
+  }
+  GetMemberById(id: number) {
+    return this.http.get<MemberModel>(`http://localhost:3000/members/${id}`);
+  }
+  updateMember(id: number, m: MemberModel) {
+    return this.http.put<void>(`http://localhost:3000/members/${id}`, m);
+  }
+  deleteMember(id: number) {
+    return this.http.delete<void>(`http://localhost:3000/members/${id}`);
   }
 }

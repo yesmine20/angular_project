@@ -1,46 +1,25 @@
 {
   "members": [
     {
-      "id": "1235",
-      "name": "imene",
-      "cin": "12345",
+      "cin": "1234566",
+      "name": "imen",
       "type": "teacher",
-      "createdAt": "2023-06-01T12:00:00Z"
+      "createdAt": "2023-06-01T12:00:00Z",
+      "id": "1235"
     },
     {
-      "id": "1236",
-      "name": "raja",
-      "cin": "12346",
-      "type": "student",
-      "createdAt": "2023-06-01T12:00:00Z"
+      "cin": "159951",
+      "name": "rim",
+      "type": "Student",
+      "createdAt": "2002-02-01",
+      "id": "cjUzaQLj75o"
     },
     {
-      "cin": 123456,
-      "name": "imen",
-      "type": null,
-      "createdAt": null,
-      "id": "l5F1HmNaf6A"
-    },
-    {
-      "cin": 123456,
-      "name": "imen",
-      "type": null,
-      "createdAt": null,
-      "id": "NYsqu7Mvtf0"
-    },
-    {
-      "cin": 123456,
-      "name": "imen",
-      "type": null,
-      "createdAt": null,
-      "id": "6rwKHhbUpFU"
-    },
-    {
-      "cin": null,
-      "name": null,
-      "type": null,
-      "createdAt": null,
-      "id": "XtFZ9FmWqn8"
+      "cin": "14615321",
+      "name": "yasmine",
+      "type": "Student",
+      "createdAt": "2016-09-07",
+      "id": "twzI222jxwQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
